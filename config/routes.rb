@@ -10,12 +10,6 @@ Rails.application.routes.draw do
 
   get "/", to: "welcome#index"
   get "/pageants", to: "pageants#index"
-  get "/pageants/:id", to: "pageants#show"
-
-  post "/pageants/new", to: "pageants#new"
-  
+  get "/pageants/:id", to: "pageants#show"  
   get "/contestants", to: "contestants#index"
-  get "/contestants/new", to: "contestants#new"
-
-  post "/contestants/new", to: "contestants#new"
 end

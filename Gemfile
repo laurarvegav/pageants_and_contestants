@@ -50,6 +50,13 @@ group :development, :test do
   gem "pry"
   gem "simplecov"
   gem "rspec-rails"
+  gem "capybara"
+  gem "orderly" 
+  # Test order
+  gem "launchy"
+  gem "shoulda-matchers"
+  gem "factory_bot_rails"
+  gem "faker"
 end
 
 group :development do

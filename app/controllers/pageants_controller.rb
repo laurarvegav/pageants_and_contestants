@@ -1,4 +1,4 @@
-class PageantsControllers < ApplicationController
+class PageantsController < ApplicationController
     def index
         @pageants = Pageant.all
     end
