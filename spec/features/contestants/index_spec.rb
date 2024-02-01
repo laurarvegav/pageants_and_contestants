@@ -14,10 +14,10 @@ RSpec.describe 'Contestant Show', type: :feature do
 
     expect(page).to have_content(@contestant1.name)
     expect(page).to have_content(@contestant1.years_of_experience)
-    expect(page).to have_content(@contestant1.has_representative )
+    expect(page).to have_content(@contestant1.has_representative)
     expect(page).to have_content(@contestant2.name)
     expect(page).to have_content(@contestant2.years_of_experience)
-    expect(page).to have_content(@contestant2.has_representative )
+    expect(page).to have_content(@contestant2.has_representative)
   end
  end
 end

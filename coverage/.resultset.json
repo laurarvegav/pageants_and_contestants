@@ -242,6 +242,7 @@
           1,
           1,
           1,
+          1,
           null
         ]
       },
@@ -253,7 +254,26 @@
       },
       "/Users/lauravegavargas/turing_work/2mod/projects/first_indiv/spec/features/contestants/show_spec.rb": {
         "lines": [
-
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
         ]
       },
       "/Users/lauravegavargas/turing_work/2mod/projects/first_indiv/spec/features/pageants/index_spec.rb": {
@@ -341,6 +361,10 @@
           1,
           1,
           null,
+          null,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -364,6 +388,6 @@
         ]
       }
     },
-    "timestamp": 1706828778
+    "timestamp": 1706829666
   }
 }
