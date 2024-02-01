@@ -3,7 +3,7 @@ class PageantsController < ApplicationController
         @pageants = Pageant.all
     end
 
-    def new
-
+    def show
+        @pageant = Pageant.find(params[:id])
     end
 end
