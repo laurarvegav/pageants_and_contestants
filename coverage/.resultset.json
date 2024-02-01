@@ -251,6 +251,33 @@
           null
         ]
       },
+      "/Users/lauravegavargas/turing_work/2mod/projects/first_indiv/spec/features/contestants/show_spec.rb": {
+        "lines": [
+
+        ]
+      },
+      "/Users/lauravegavargas/turing_work/2mod/projects/first_indiv/spec/features/pageants/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/lauravegavargas/turing_work/2mod/projects/first_indiv/spec/features/pageants/show_spec.rb": {
         "lines": [
           1,
@@ -297,6 +324,32 @@
           null
         ]
       },
+      "/Users/lauravegavargas/turing_work/2mod/projects/first_indiv/app/models/contestant.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/lauravegavargas/turing_work/2mod/projects/first_indiv/app/controllers/contestants_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/lauravegavargas/turing_work/2mod/projects/first_indiv/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/Users/lauravegavargas/turing_work/2mod/projects/first_indiv/app/controllers/pageants_controller.rb": {
         "lines": [
           1,
@@ -309,14 +362,8 @@
           null,
           null
         ]
-      },
-      "/Users/lauravegavargas/turing_work/2mod/projects/first_indiv/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
       }
     },
-    "timestamp": 1706820247
+    "timestamp": 1706828778
   }
 }

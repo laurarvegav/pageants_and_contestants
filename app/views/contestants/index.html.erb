@@ -1,0 +1,6 @@
+<h1>All Contestants</h1>
+<% @contestants.each do |contestant| %>
+    <h3><%= contestant.name %></h3>
+    <li>Years of Experience: <%= contestant.years_of_experience %></li>
+    <li> Has Representative? <%= contestant.has_representative %></li>
+<% end %>
