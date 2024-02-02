@@ -11,7 +11,7 @@ RSpec.describe 'Contestant Show', type: :feature do
   # User Story 4, Child Show
   it 'can see the contestant and all its attributes' do
     visit "/contestants/#{@contestant1.id}"
-save_and_open_page
+
     expect(page).to have_content(@contestant1.name)
     expect(page).to have_content("Has: #{@contestant1.years_of_experience} years of experience")
     expect(page).to have_content(@contestant1.has_representative)
