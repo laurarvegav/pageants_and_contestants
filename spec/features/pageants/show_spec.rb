@@ -25,5 +25,12 @@ RSpec.describe 'Pageant Show', type: :feature do
       expected_text = "#{@pageant2.name} has #{@pageant2.contestants.count} contestants."
       expect(page).to have_content(expected_text.strip)
     end
+
+    # User Story 9, Parent Index Link
+    it "shows a link at the top of the page that takes me to the Pageant Index" do
+      visit "/pageants/#{@pageant2.id}"
+
+      expect(page).to have_link(href: "/pageants")
+    end
  end
 end

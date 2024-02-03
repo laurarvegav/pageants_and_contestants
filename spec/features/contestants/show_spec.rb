@@ -18,10 +18,17 @@ RSpec.describe 'Contestant Show', type: :feature do
   end
 
    # User Story 8, Child Index Link
-   it "shows a link at the top of the page that takes me to the Child Index" do
+   it "shows a link at the top of the page that takes me to the Contestant Index" do
     visit "/contestants/#{@contestant2.id}"
 
     expect(page).to have_link(href: "/contestants")
+  end
+
+  # User Story 9, Parent Index Link
+  it "shows a link at the top of the page that takes me to the Pageant Index" do
+    visit "/contestants/#{@contestant1.id}"
+
+    expect(page).to have_link(href: "/pageants")
   end
  end
 end
