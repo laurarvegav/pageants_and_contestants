@@ -14,4 +14,6 @@ Rails.application.routes.draw do
   get "/contestants", to: "contestants#index"
   get "/contestants/:ID", to: "contestants#show"
   get "/pageants/:id/contest", to: "pageants#contest"
+  get "/pageants/new", to: "pageants#new"
+  post "/pageants",to: "pageants#create"
 end

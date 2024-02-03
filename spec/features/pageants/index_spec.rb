@@ -38,5 +38,19 @@ RSpec.describe 'Pageants Index', type: :feature do
     expect(page).to have_content(@pageant1.created_at)
     expect(page).to have_content(@pageant2.created_at)
   end
+
+  # User Story 11, Pageant Creation 
+  it 'shows a link to create a new Pageant record' do
+    visit "/pageants"
+
+    expect(page).to have_link(href: "/pageants/new")
+  end
+
+  it "links to the new page from the pageants index" do
+    visit "/pageants"
+    click_link("New Pageant")
+    
+    expect(current_path).to eq("/pageants/new")
+  end
  end
 end
