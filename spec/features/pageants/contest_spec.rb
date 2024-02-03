@@ -10,9 +10,9 @@ RSpec.describe 'Pageants Contest', type: :feature do
   end
 
   #User Story 5, Parent Children Index
-  it 'has a list of the childrens attributes' do
+  it 'has a list of the associated childrens attributes' do
     visit "/pageants/#{@pageant2.id}/contest"
-save_and_open_page
+
     expect(page).to have_content(@contestant1.name)
     expect(page).to have_content(@contestant1.years_of_experience)
     expect(page).to have_content(@contestant1.has_representative)

@@ -23,5 +23,13 @@ RSpec.describe 'Pageants Index', type: :feature do
 
     expect(page).to have_link(href: "/pageants/#{@pageant2.id}/contest")
   end
+
+  #User Story 6, Parent Index sorted by Most Recently Created 
+  it 'can see see that records are ordered by most recently created first
+  And next to each of the records I see when it was created' do
+    visit "/pageants"
+
+    expect(@pageant2.name).to appear_before(@pageant1.name)
+  end
  end
 end

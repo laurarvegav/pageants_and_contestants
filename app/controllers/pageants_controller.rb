@@ -1,6 +1,6 @@
 class PageantsController < ApplicationController
     def index
-        @pageants = Pageant.all
+        @pageants = Pageant.order(created_at: :desc)
     end
 
     def show

@@ -1,5 +1,6 @@
 <h1>All Pageants</h1>
 
 <% @pageants.each do |pageant| %>
-    <li><%= pageant.name %></li>
+    <h3><%= pageant.name %></h3> 
+    <small>Last updated: <%= pageant.created_at %></small>
 <% end %>
