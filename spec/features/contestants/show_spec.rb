@@ -16,5 +16,12 @@ RSpec.describe 'Contestant Show', type: :feature do
     expect(page).to have_content("Has: #{@contestant1.years_of_experience} years of experience")
     expect(page).to have_content(@contestant1.has_representative)
   end
+
+   # User Story 8, Child Index Link
+   it "shows a link at the top of the page that takes me to the Child Index" do
+    visit "/contestants/#{@contestant2.id}"
+
+    expect(page).to have_link(href: "/contestants")
+  end
  end
 end
