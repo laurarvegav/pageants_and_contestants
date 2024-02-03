@@ -31,5 +31,12 @@ RSpec.describe 'Pageants Index', type: :feature do
 
     expect(@pageant2.name).to appear_before(@pageant1.name)
   end
+
+  it 'next to each of the records can see when it was created' do
+    visit "/pageants"
+
+    expect(page).to have_content(@pageant1.created_at)
+    expect(page).to have_content(@pageant2.created_at)
+  end
  end
 end
