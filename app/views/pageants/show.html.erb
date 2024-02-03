@@ -1,4 +1,5 @@
 <h1>Pageant's Name:<%= @pageant.name %></h1>
 <p>Scheduled? <%= @pageant.scheduled %></p>
 <p>Version Number <%= @pageant.version_number %></p>
+<p><%= @pageant.name %> has <%= @pageant.contestants.count %> contestants.
 <p><a href="/pageants/<%= @pageant.id %>/contest"> Pageant Contestants</a></p>
