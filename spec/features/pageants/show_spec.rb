@@ -39,5 +39,19 @@ RSpec.describe 'Pageant Show', type: :feature do
 
       expect(page).to have_link(href: "/pageants/#{@pageant2.id}/contest")
     end
+
+    # User story 12, Parent Update
+    it "shows a link to update the parent 'Update Pageant'" do
+      visit "/pageants/#{@pageant1.id}"
+
+      expect(page).to have_link(href: "/pageants/#{@pageant1.id}/edit")
+    end
+
+    xit "takes you to the form to 'Update Pageant'" do
+      visit "/pageants/#{@pageant1.id}"
+      click_button("Update Pageant")
+
+      expect(current_path).to eq("/pageants/#{@pageant1.id}/edit")
+    end
  end
 end

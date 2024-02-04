@@ -2,6 +2,7 @@
 
 <% @pageants.each do |pageant| %>
     <h3><%= pageant.name %></h3> 
+    <p><a href="/pageants/<%= pageant.id %>"> Pageant Details</a></p>
     <small>Last updated: <%= pageant.created_at %></small>
 <% end %>
 

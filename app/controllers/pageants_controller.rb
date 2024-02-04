@@ -5,9 +5,9 @@ class PageantsController < ApplicationController
 
     def show
         if params[:id] == 'new'
-            render :new
+          render :new
         else
-            @pageant = Pageant.find(params[:id])
+          @pageant = Pageant.find(params[:id])
         end
     end
 
@@ -21,6 +21,20 @@ class PageantsController < ApplicationController
     def create
       pageant = Pageant.create(pageant_params)
       redirect_to "/pageants"
+    end
+
+    def edit
+      @pageant = Pageant.find(params[:id])
+    end
+
+    def update
+      @pageant = Pageant.find(params[:id])
+      
+      if @pageant.update(pageant_params)
+        redirect_to "/pageants/#{@pageant.id}"
+      else
+        render :edit
+      end
     end
 
     private

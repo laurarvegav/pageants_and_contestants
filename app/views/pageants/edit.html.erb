@@ -1,0 +1,13 @@
+<h1>Update the Pageant</h1>
+<%= form_with url: "/pageants/#{@pageant.id}", method: :patch, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %><br>
+  
+  <%= form.label :version_number %>
+  <%= form.number_field :version_number %><br>
+
+  <%= form.label :scheduled %>
+  <%= form.select :scheduled, [['True', true], ['False', false]], selected: @pageant.scheduled %><br>
+
+  <%= form.submit "Update Pageant" %>
+<% end %>
