@@ -30,5 +30,12 @@ RSpec.describe 'Contestant Show', type: :feature do
 
     expect(page).to have_link(href: "/pageants")
   end
+
+  #User Story 14, Child Update
+  it "shows a link to update thatt Contestant 'Update Contestant'" do
+    visit "/contestants/#{@contestant1.id}"
+
+    expect(page).to have_link(href: "/contestants/#{@contestant1.id}/edit")
+  end
  end
 end

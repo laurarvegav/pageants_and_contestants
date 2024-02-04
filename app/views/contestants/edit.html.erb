@@ -1,0 +1,13 @@
+<h1>Update Contestant</h1>
+<%= form_with url: "/contestants/#{@contestant.id}", method: :patch, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %><br>
+  
+  <%= form.label :years_of_experience %>
+  <%= form.number_field :years_of_experience %><br>
+
+  <%= form.label :has_representative %>
+  <%= form.select :has_representative, [['True', true], ['False', false]] %><br>
+
+  <%= form.submit "Update Contestant" %>
+<% end %>
