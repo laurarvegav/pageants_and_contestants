@@ -11,7 +11,7 @@ RSpec.describe 'Contestant Show', type: :feature do
   #User Story 14, Child Update
   it "shows a form to edit the child's attributes" do
     visit "/contestants/#{@contestant1.id}/edit"
-save_and_open_page
+
     expect(page).to have_content("Update Contestant")
     expect(page).to have_field("Name")
     expect(page).to have_field("Years of experience")

@@ -6,6 +6,7 @@ RSpec.describe 'Contestant Show', type: :feature do
     @pageant2 = Pageant.create!(name: "Miss Universe", scheduled: true, version_number: 25)
     @contestant1 = @pageant2.contestants.create!(name: "Colombia", years_of_experience: 57, has_representative: true)
     @contestant2 = @pageant2.contestants.create!(name: "Peru", years_of_experience: 75, has_representative: true)
+    @contestant3 = @pageant2.contestants.create!(name: "USA", years_of_experience: 90, has_representative: false)
   end
 
   #User Story 3, Child Index
@@ -25,6 +26,14 @@ RSpec.describe 'Contestant Show', type: :feature do
     visit '/contestants'
 
     expect(page).to have_link(href: "/contestants")
+  end
+
+  #User Story 15, Child Index only shows `true` Records 
+  it "only shows contestants that have a representative" do
+    visit '/contestants'
+    save_and_open_page
+    expect(page).to have_content("true")
+    expect(page).to have_no_content("false")
   end
  end
 end

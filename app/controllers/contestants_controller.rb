@@ -1,6 +1,6 @@
 class ContestantsController < ApplicationController
   def index
-    @contestants = Contestant.all
+    @contestants = Contestant.where(has_representative: true)
   end
 
   def show
