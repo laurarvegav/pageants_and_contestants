@@ -21,6 +21,13 @@ class ContestantsController < ApplicationController
     end
   end
 
+  def destroy
+    contest = Contestant.find(params[:id])
+    contest.destroy
+
+    redirect_to '/contestants'
+  end
+
   private
     def contestant_params
       params.permit(:name, :years_of_experience, :has_representative)

@@ -62,6 +62,14 @@ class PageantsController < ApplicationController
       render :edit
     end
 
+    def destroy
+      @pageant = Pageant.find(params[:id])
+      @contest = Contestant.where(pageant_id: params[:id])
+      @contest.destroy_all
+      @pageant.destroy
+      redirect_to '/pageants'
+    end
+
     private
     def pageant_params
       params.permit(:name, :scheduled, :version_number)

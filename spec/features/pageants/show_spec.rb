@@ -53,5 +53,12 @@ RSpec.describe 'Pageant Show', type: :feature do
 
       expect(page).to have_link(href: "/pageants/#{@pageant1.id}/contest_new")
     end
+
+    #User Story 19, Parent Delete
+    it "shows a link to delete the parent" do
+      visit "/pageants/#{@pageant1.id}"
+
+      expect(page).to have_button("Delete")
+    end
  end
 end

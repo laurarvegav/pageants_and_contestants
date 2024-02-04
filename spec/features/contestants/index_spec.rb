@@ -39,7 +39,7 @@ RSpec.describe 'Contestant Show', type: :feature do
   # User Story 18, Child Update From Index Page 
   it "shows link to edit Contestant" do
     visit "/contestants"
-save_and_open_page
+
     expect(page).to have_link("Edit Contestant #{@contestant1.name}", href: "/contestants/#{@contestant1.id}/edit")
     expect(page).to have_link("Edit Contestant #{@contestant2.name}", href: "/contestants/#{@contestant2.id}/edit")
   end
