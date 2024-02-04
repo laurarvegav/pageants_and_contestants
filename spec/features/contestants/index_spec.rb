@@ -31,9 +31,24 @@ RSpec.describe 'Contestant Show', type: :feature do
   #User Story 15, Child Index only shows `true` Records 
   it "only shows contestants that have a representative" do
     visit '/contestants'
-    
+
     expect(page).to have_content("true")
     expect(page).to have_no_content("false")
+  end
+
+  # User Story 18, Child Update From Index Page 
+  it "shows link to edit Contestant" do
+    visit "/contestants"
+save_and_open_page
+    expect(page).to have_link("Edit Contestant #{@contestant1.name}", href: "/contestants/#{@contestant1.id}/edit")
+    expect(page).to have_link("Edit Contestant #{@contestant2.name}", href: "/contestants/#{@contestant2.id}/edit")
+  end
+
+  it "takes me to that contestant edit page where I can update its information just like in User Story 12" do
+    visit "/contestants"
+    click_link("Edit Contestant #{@contestant1.name}")
+    
+    expect(current_path).to eq("/contestants/#{@contestant1.id}/edit")
   end
  end
 end

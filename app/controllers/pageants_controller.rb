@@ -59,7 +59,6 @@ class PageantsController < ApplicationController
     end
 
     def get_id
-      require 'pry'; binding.pry
       render :edit
     end
 

@@ -56,7 +56,7 @@ RSpec.describe 'Pageants Index', type: :feature do
     # User Story 17, Parent Update From Parent Index Page 
     it "shows link to edit Pageant" do
       visit "/pageants"
-save_and_open_page
+
       expect(page).to have_link("Edit Pageant #{@pageant1.name}", href: "/pageants/#{@pageant1.id}/edit")
       expect(page).to have_link("Edit Pageant #{@pageant2.name}", href: "/pageants/#{@pageant2.id}/edit")
     end

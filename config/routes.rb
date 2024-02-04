@@ -23,5 +23,4 @@ Rails.application.routes.draw do
   get "/contestants/:ID/edit", to: "contestants#edit"
   patch "/contestants/:ID", to: "contestants#update"
   get "/pageants/:id/contest_order", to: "pageants#contest_order"
-  get "/pageants/edit", to: "pageants#get_id"
 end
