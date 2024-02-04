@@ -6,6 +6,8 @@ RSpec.describe "destroying a Contestamt" do
     @contestant3 = @pageant1.contestants.create!(name: "Huila", years_of_experience: 5, has_representative: true)
     @contestant4 = @pageant1.contestants.create!(name: "Arauca", years_of_experience: 7, has_representative: true)
   end
+
+  #User Story 19, Child Delete
   it "can delete the contestant from the show page" do
     visit "/contestants/#{@contestant3.id}"
 

@@ -6,14 +6,15 @@ RSpec.describe "destroying a Pageant" do
     @contestant3 = @pageant1.contestants.create!(name: "Huila", years_of_experience: 5, has_representative: true)
     @contestant4 = @pageant1.contestants.create!(name: "Arauca", years_of_experience: 7, has_representative: true)
   end
+
+  #User Story 19, Parent Delete
   it "can delete the pageant from the show page" do
     visit "/pageants/#{@pageant1.id}"
     click_button "Delete"
     save_and_open_page
 
     expect(current_path).to eq("/pageants")
-    expect(page).to_not have_content("Huila")
-    expect(page).to_not have_content("Arauca")
+    expect(page).to_not have_content("Miss Colombia")
   end
 
   it "can delete the contestants of the pageant from the show page" do
