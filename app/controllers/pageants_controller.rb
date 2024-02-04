@@ -54,6 +54,10 @@ class PageantsController < ApplicationController
       end
     end
 
+    def contest_order
+      @contest = Contestant.where(pageant_id: params[:id]).order(:name)
+    end
+
     private
     def pageant_params
       params.permit(:name, :scheduled, :version_number)

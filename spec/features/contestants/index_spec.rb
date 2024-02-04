@@ -31,7 +31,7 @@ RSpec.describe 'Contestant Show', type: :feature do
   #User Story 15, Child Index only shows `true` Records 
   it "only shows contestants that have a representative" do
     visit '/contestants'
-    save_and_open_page
+    
     expect(page).to have_content("true")
     expect(page).to have_no_content("false")
   end

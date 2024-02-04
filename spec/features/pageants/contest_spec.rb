@@ -35,5 +35,21 @@ RSpec.describe 'Pageants Contest', type: :feature do
 
     expect(page).to have_link(href: "/pageants")
   end
+
+
+  # User Story 16, Sort Parent's Children in Alphabetical Order by name 
+  it "shows a link to sort children in alphabetical order" do
+    visit "/pageants/#{@pageant2.id}/contest"
+
+    expect(page).to have_link(href: "/pageants/#{@pageant2.id}/contest_order")
+  end
+
+  it "takes me back to the Contest Page where I see all of the Pageant's Contestants in alphabetical order" do
+    visit "/pageants/#{@pageant2.id}/contest"
+    click_link("Sort in Alphabetical Order")
+
+    expect(current_path).to eq("/pageants/#{@pageant2.id}/contest_order")
+    expect(@contestant1.name).to appear_before(@contestant2.name)
+  end
  end
 end
