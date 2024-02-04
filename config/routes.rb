@@ -18,4 +18,6 @@ Rails.application.routes.draw do
   post "/pageants",to: "pageants#create"
   get "/pageants/:id/edit", to: "pageants#edit"
   patch "/pageants/:id", to: "pageants#update"
+  get "/pageants/:id/contest_new", to: "pageants#contest_new"
+  post "/pageants/:id/contest", to: "pageants#contest_create"
 end

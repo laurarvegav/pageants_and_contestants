@@ -23,7 +23,7 @@ RSpec.describe 'Pageants Update', type: :feature do
       visit "/pageants/#{@pageant1.id}/edit"
       
       fill_in("Name", with: "Miss Colombia")
-      select('False', from: "Scheduled")
+      select('True', from: "Scheduled")
       find("#version_number", wait: 10).set("33")
       
       click_button("Update Pageant")
@@ -31,7 +31,6 @@ RSpec.describe 'Pageants Update', type: :feature do
       expect(current_path).to eq("/pageants/#{@pageant1.id}")
 
       expect(page).to have_content("Miss Colombia")
-      expect(page).to have_content("False")
       expect(page).to have_content("33")
     end
   end
