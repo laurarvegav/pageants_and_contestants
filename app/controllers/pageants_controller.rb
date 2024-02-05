@@ -14,17 +14,23 @@ class PageantsController < ApplicationController
     def contest
       @pageant = Pageant.find(params[:id])
       @contest = Contestant.where(pageant_id: params[:id])
+      @contest.order(:name) if params[:sort]
+
+      if params[:show_contestants_with_more_than]
+        years_of_experience_threshold = params[:show_contestants_with_more_than].to_i
+        @contest = @contest.where("years_of_experience > ?", years_of_experience_threshold)
+      end
     end 
 
-    def process_contest_input
-      @pageant = Pageant.find(params[:id])
+    # def process_contest_input
+    #   @pageant = Pageant.find(params[:id])
       
-      years_of_experience_threshold = params[:show_contestants_with_more_than].to_i
-      @contest = Contestant.where(pageant_id: params[:id])
-                          .where("years_of_experience > ?", years_of_experience_threshold)
+    #   years_of_experience_threshold = params[:show_contestants_with_more_than].to_i
+    #   @contest = Contestant.where(pageant_id: params[:id])
+    #                       .where("years_of_experience > ?", years_of_experience_threshold)
 
-      render :contest
-    end
+    #   render :contest
+    # end
 
     def new
     end
@@ -65,13 +71,13 @@ class PageantsController < ApplicationController
       end
     end
 
-    def contest_order
-      @contest = Contestant.where(pageant_id: params[:id]).order(:name)
-    end
+    # def contest_order
+    #   @contest = Contestant.where(pageant_id: params[:id]).order(:name)
+    # end
 
-    def get_id
-      render :edit
-    end
+    # def get_id
+    #   render :edit
+    # end
 
     def destroy
       @pageant = Pageant.find(params[:id])

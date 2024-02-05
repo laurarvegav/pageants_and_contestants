@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2024-02-04T17:46:56-07:00">2024-02-04T17:46:56-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2024-02-04T19:50:30-07:00">2024-02-04T19:50:30-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  96.3%
+  99.05%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.48
+         1.57
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>433</b> relevant lines,
-    <span class="green"><b>417</b> lines covered</span> and
-    <span class="red"><b>16</b> lines missed. </span>
+    <b>420</b> relevant lines,
+    <span class="green"><b>416</b> lines covered</span> and
+    <span class="red"><b>4</b> lines missed. </span>
     (<span class="green">
-  96.3%
+  99.05%
 </span>
 )
   </div>
@@ -94,12 +94,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#cda757405eb36e9eb24db6b0407e81e8a91281ef" class="src_link" title="app/controllers/pageants_controller.rb">app/controllers/pageants_controller.rb</a></td>
-            <td class="yellow strong cell--number t-file__coverage">84.00 %</td>
-            <td class="cell--number">92</td>
-            <td class="cell--number">50</td>
+            <td class="green strong cell--number t-file__coverage">93.33 %</td>
+            <td class="cell--number">98</td>
+            <td class="cell--number">45</td>
             <td class="cell--number">42</td>
-            <td class="cell--number">8</td>
-            <td class="cell--number">2.10</td>
+            <td class="cell--number">3</td>
+            <td class="cell--number">2.78</td>
             
           </tr>
         
@@ -249,9 +249,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#39b95abd2ce78c430fa2e056b379c045d327857e" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">31</td>
-            <td class="cell--number">22</td>
-            <td class="cell--number">22</td>
+            <td class="cell--number">30</td>
+            <td class="cell--number">18</td>
+            <td class="cell--number">18</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -303,12 +303,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#1f944e26070bf2c0357c61fb1d09e04d2a9ea50e" class="src_link" title="spec/features/pageants/contest_spec.rb">spec/features/pageants/contest_spec.rb</a></td>
-            <td class="yellow strong cell--number t-file__coverage">84.44 %</td>
-            <td class="cell--number">79</td>
-            <td class="cell--number">45</td>
-            <td class="cell--number">38</td>
-            <td class="cell--number">7</td>
-            <td class="cell--number">1.62</td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">72</td>
+            <td class="cell--number">41</td>
+            <td class="cell--number">41</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.85</td>
             
           </tr>
         
@@ -879,8 +879,8 @@
   <div class="header">
     <h3>app/controllers/pageants_controller.rb</h3>
     <h4>
-      <span class="yellow">
-  84.0%
+      <span class="green">
+  93.33%
 </span>
 
       lines covered
@@ -889,9 +889,9 @@
     
 
     <div class="t-line-summary">
-      <b>50</b> relevant lines.
+      <b>45</b> relevant lines.
       <span class="green"><b>42</b> lines covered</span> and
-      <span class="red"><b>8</b> lines missed.</span>
+      <span class="red"><b>3</b> lines missed.</span>
     </div>
 
     
@@ -1056,8 +1056,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="15">
-            <span class="hits">7</span>
+          <li class="covered" data-hits="9" data-linenumber="15">
+            <span class="hits">9</span>
             
 
             
@@ -1067,8 +1067,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="16">
-            <span class="hits">7</span>
+          <li class="covered" data-hits="9" data-linenumber="16">
+            <span class="hits">9</span>
             
 
             
@@ -1078,13 +1078,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="17">
-            
-            
-
+          <li class="covered" data-hits="9" data-linenumber="17">
+            <span class="hits">9</span>
             
 
-            <code class="ruby">    end </code>
+            
+
+            <code class="ruby">      @contest.order(:name) if params[:sort]</code>
           </li>
         </div>
       
@@ -1100,57 +1100,57 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="19">
+          <li class="covered" data-hits="9" data-linenumber="19">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">      if params[:show_contestants_with_more_than]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="20">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    def process_contest_input</code>
+            <code class="ruby">        years_of_experience_threshold = params[:show_contestants_with_more_than].to_i</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="20">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">      @pageant = Pageant.find(params[:id])</code>
+            
+
+            <code class="ruby">        @contest = @contest.where(&quot;years_of_experience &gt; ?&quot;, years_of_experience_threshold)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="21">
+          <li class="never" data-hits="" data-linenumber="22">
             
             
 
             
 
-            <code class="ruby">      </code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="22">
+          <li class="never" data-hits="" data-linenumber="23">
             
             
 
             
 
-            <code class="ruby">      years_of_experience_threshold = params[:show_contestants_with_more_than].to_i</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="23">
-            
-            
-
-            
-
-            <code class="ruby">      @contest = Contestant.where(pageant_id: params[:id])</code>
+            <code class="ruby">    end </code>
           </li>
         </div>
       
@@ -1161,7 +1161,7 @@
 
             
 
-            <code class="ruby">                          .where(&quot;years_of_experience &gt; ?&quot;, years_of_experience_threshold)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -1172,18 +1172,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    # def process_contest_input</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="26">
+          <li class="never" data-hits="" data-linenumber="26">
             
             
 
             
 
-            <code class="ruby">      render :contest</code>
+            <code class="ruby">    #   @pageant = Pageant.find(params[:id])</code>
           </li>
         </div>
       
@@ -1194,7 +1194,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">      </code>
           </li>
         </div>
       
@@ -1205,18 +1205,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    #   years_of_experience_threshold = params[:show_contestants_with_more_than].to_i</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="29">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="29">
+            
             
 
             
 
-            <code class="ruby">    def new</code>
+            <code class="ruby">    #   @contest = Contestant.where(pageant_id: params[:id])</code>
           </li>
         </div>
       
@@ -1227,7 +1227,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">    #                       .where(&quot;years_of_experience &gt; ?&quot;, years_of_experience_threshold)</code>
           </li>
         </div>
       
@@ -1243,46 +1243,46 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="32">
+          <li class="never" data-hits="" data-linenumber="32">
+            
+            
+
+            
+
+            <code class="ruby">    #   render :contest</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="33">
+            
+            
+
+            
+
+            <code class="ruby">    # end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="34">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="35">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    def create</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="33">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      pageant = Pageant.create(pageant_params)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="34">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      redirect_to &quot;/pageants&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="35">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
+            <code class="ruby">    def new</code>
           </li>
         </div>
       
@@ -1293,12 +1293,78 @@
 
             
 
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="37">
+            
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="37">
+          <li class="covered" data-hits="1" data-linenumber="38">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def create</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="39">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      pageant = Pageant.create(pageant_params)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="40">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      redirect_to &quot;/pageants&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="41">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="42">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="43">
             <span class="hits">1</span>
             
 
@@ -1309,7 +1375,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="38">
+          <li class="covered" data-hits="3" data-linenumber="44">
             <span class="hits">3</span>
             
 
@@ -1320,79 +1386,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="39">
+          <li class="never" data-hits="" data-linenumber="45">
             
             
 
             
 
             <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="40">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="41">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    def update</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="42">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      @pageant = Pageant.find(params[:id])</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="43">
-            
-            
-
-            
-
-            <code class="ruby">      </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="44">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      if @pageant.update(pageant_params)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="45">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        redirect_to &quot;/pageants/#{@pageant.id}&quot;</code>
           </li>
         </div>
       
@@ -1403,29 +1403,29 @@
 
             
 
-            <code class="ruby">      else</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="47">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="47">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">        render :edit</code>
+            
+
+            <code class="ruby">    def update</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="48">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="48">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">      end</code>
+            
+
+            <code class="ruby">      @pageant = Pageant.find(params[:id])</code>
           </li>
         </div>
       
@@ -1436,18 +1436,18 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">      </code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="50">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="50">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">      if @pageant.update(pageant_params)</code>
           </li>
         </div>
       
@@ -1458,133 +1458,12 @@
 
             
 
-            <code class="ruby">    def contest_new</code>
+            <code class="ruby">        redirect_to &quot;/pageants/#{@pageant.id}&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="52">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">      @pageant = Pageant.find(params[:id])</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="53">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="54">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="55">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    def contest_create</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="56">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      @pageant = Pageant.find(params[:id])</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="57">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      @contestant = @pageant.contestants.create!(name: params[:name], years_of_experience: params[:years_of_experience], has_representative: params[:has_representative], pageant_id: @pageant.id)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="58">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="59">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      if @contestant.save</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="60">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        @pageant.contestants &lt;&lt; @contestant</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="61">
-            
-            
-
-            
-
-            <code class="ruby">    </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="62">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        redirect_to &quot;/pageants/#{@pageant.id}/contest&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="63">
+          <li class="never" data-hits="" data-linenumber="52">
             
             
 
@@ -1595,18 +1474,18 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="64">
+          <li class="missed" data-hits="0" data-linenumber="53">
             
             
 
             
 
-            <code class="ruby">        render :contest</code>
+            <code class="ruby">        render :edit</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="65">
+          <li class="never" data-hits="" data-linenumber="54">
             
             
 
@@ -1617,13 +1496,134 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="66">
+          <li class="never" data-hits="" data-linenumber="55">
             
             
 
             
 
             <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="56">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="57">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def contest_new</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="58">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">      @pageant = Pageant.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="59">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="60">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="61">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def contest_create</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="62">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      @pageant = Pageant.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="63">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      @contestant = @pageant.contestants.create!(name: params[:name], years_of_experience: params[:years_of_experience], has_representative: params[:has_representative], pageant_id: @pageant.id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="64">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="65">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      if @contestant.save</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="66">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        @pageant.contestants &lt;&lt; @contestant</code>
           </li>
         </div>
       
@@ -1634,7 +1634,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    </code>
           </li>
         </div>
       
@@ -1645,29 +1645,29 @@
 
             
 
-            <code class="ruby">    def contest_order</code>
+            <code class="ruby">        redirect_to &quot;/pageants/#{@pageant.id}/contest&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="69">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="69">
+            
             
 
             
 
-            <code class="ruby">      @contest = Contestant.where(pageant_id: params[:id]).order(:name)</code>
+            <code class="ruby">      else</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="70">
+          <li class="missed" data-hits="0" data-linenumber="70">
             
             
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">        render :contest</code>
           </li>
         </div>
       
@@ -1678,29 +1678,29 @@
 
             
 
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="72">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="73">
+            
+            
+
+            
+
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="72">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    def get_id</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="73">
-            
-            
-
-            
-
-            <code class="ruby">      render :edit</code>
           </li>
         </div>
       
@@ -1711,7 +1711,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">    # def contest_order</code>
           </li>
         </div>
       
@@ -1722,12 +1722,78 @@
 
             
 
+            <code class="ruby">    #   @contest = Contestant.where(pageant_id: params[:id]).order(:name)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="76">
+            
+            
+
+            
+
+            <code class="ruby">    # end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="77">
+            
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="76">
+          <li class="never" data-hits="" data-linenumber="78">
+            
+            
+
+            
+
+            <code class="ruby">    # def get_id</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="79">
+            
+            
+
+            
+
+            <code class="ruby">    #   render :edit</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="80">
+            
+            
+
+            
+
+            <code class="ruby">    # end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="81">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="82">
             <span class="hits">1</span>
             
 
@@ -1738,7 +1804,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="77">
+          <li class="covered" data-hits="3" data-linenumber="83">
             <span class="hits">3</span>
             
 
@@ -1749,7 +1815,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="78">
+          <li class="covered" data-hits="3" data-linenumber="84">
             <span class="hits">3</span>
             
 
@@ -1760,7 +1826,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="79">
+          <li class="covered" data-hits="3" data-linenumber="85">
             <span class="hits">3</span>
             
 
@@ -1771,7 +1837,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="80">
+          <li class="covered" data-hits="3" data-linenumber="86">
             <span class="hits">3</span>
             
 
@@ -1782,7 +1848,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="81">
+          <li class="covered" data-hits="3" data-linenumber="87">
             <span class="hits">3</span>
             
 
@@ -1793,7 +1859,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="82">
+          <li class="never" data-hits="" data-linenumber="88">
             
             
 
@@ -1804,7 +1870,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="83">
+          <li class="never" data-hits="" data-linenumber="89">
             
             
 
@@ -1815,7 +1881,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="84">
+          <li class="covered" data-hits="1" data-linenumber="90">
             <span class="hits">1</span>
             
 
@@ -1826,7 +1892,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="85">
+          <li class="covered" data-hits="1" data-linenumber="91">
             <span class="hits">1</span>
             
 
@@ -1837,7 +1903,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="86">
+          <li class="covered" data-hits="2" data-linenumber="92">
             <span class="hits">2</span>
             
 
@@ -1848,7 +1914,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="87">
+          <li class="never" data-hits="" data-linenumber="93">
             
             
 
@@ -1859,7 +1925,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="88">
+          <li class="never" data-hits="" data-linenumber="94">
             
             
 
@@ -1870,7 +1936,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="89">
+          <li class="covered" data-hits="1" data-linenumber="95">
             <span class="hits">1</span>
             
 
@@ -1881,7 +1947,7 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="90">
+          <li class="missed" data-hits="0" data-linenumber="96">
             
             
 
@@ -1892,7 +1958,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="91">
+          <li class="never" data-hits="" data-linenumber="97">
             
             
 
@@ -1903,7 +1969,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="92">
+          <li class="never" data-hits="" data-linenumber="98">
             
             
 
@@ -4612,8 +4678,8 @@
     
 
     <div class="t-line-summary">
-      <b>22</b> relevant lines.
-      <span class="green"><b>22</b> lines covered</span> and
+      <b>18</b> relevant lines.
+      <span class="green"><b>18</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -4895,7 +4961,7 @@
 
             
 
-            <code class="ruby">  get &quot;/pageants/:id/contest_order&quot;, to: &quot;pageants#contest_order&quot;</code>
+            <code class="ruby">  delete &quot;/pageants/:id&quot;, to: &quot;pageants#destroy&quot;</code>
           </li>
         </div>
       
@@ -4906,56 +4972,45 @@
 
             
 
-            <code class="ruby">  delete &quot;/pageants/:id&quot;, to: &quot;pageants#destroy&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="27">
-            <span class="hits">1</span>
-            
-
-            
-
             <code class="ruby">  delete &quot;/contestants/:id&quot;, to: &quot;contestants#destroy&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="28">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="27">
+            
             
 
             
 
-            <code class="ruby">  get &quot;/pageants/:id/contest&quot;, to: &quot;pageants#process_contest_input&quot;</code>
+            <code class="ruby">  # get &quot;/pageants/:id/contest&quot;, to: &quot;pageants#process_contest_input&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="29">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="28">
+            
             
 
             
 
-            <code class="ruby">  delete &quot;/pageants&quot;, to: &quot;pageants#destroy&quot;</code>
+            <code class="ruby">  # delete &quot;/pageants&quot;, to: &quot;pageants#destroy&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="30">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="29">
+            
             
 
             
 
-            <code class="ruby">  delete &quot;/contestants&quot;, to: &quot;contestants#destroy&quot;</code>
+            <code class="ruby">  # delete &quot;/contestants&quot;, to: &quot;contestants#destroy&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="31">
+          <li class="never" data-hits="" data-linenumber="30">
             
             
 
@@ -7023,8 +7078,8 @@
   <div class="header">
     <h3>spec/features/pageants/contest_spec.rb</h3>
     <h4>
-      <span class="yellow">
-  84.44%
+      <span class="green">
+  100.0%
 </span>
 
       lines covered
@@ -7033,9 +7088,9 @@
     
 
     <div class="t-line-summary">
-      <b>45</b> relevant lines.
-      <span class="green"><b>38</b> lines covered</span> and
-      <span class="red"><b>7</b> lines missed.</span>
+      <b>41</b> relevant lines.
+      <span class="green"><b>41</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
 
     
@@ -7096,7 +7151,7 @@
 
             
 
-            <code class="ruby">  before(:each) do</code>
+            <code class="ruby">  before do</code>
           </li>
         </div>
       
@@ -7525,7 +7580,7 @@
 
             
 
-            <code class="ruby">  it &quot;shows a link to sort children in alphabetical order&quot; do</code>
+            <code class="ruby">  it &quot;takes me back to the Contest Page where I see all of the Pageant&#39;s Contestants in alphabetical order&quot; do</code>
           </li>
         </div>
       
@@ -7541,73 +7596,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="46">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="47">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_link(href: &quot;/pageants/#{@pageant2.id}/contest_order&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="48">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="49">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="50">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  it &quot;takes me back to the Contest Page where I see all of the Pageant&#39;s Contestants in alphabetical order&quot; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="51">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit &quot;/pageants/#{@pageant2.id}/contest&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="52">
+          <li class="covered" data-hits="1" data-linenumber="46">
             <span class="hits">1</span>
             
 
@@ -7618,7 +7607,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="53">
+          <li class="never" data-hits="" data-linenumber="47">
             
             
 
@@ -7629,18 +7618,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="54">
+          <li class="covered" data-hits="1" data-linenumber="48">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    expect(current_path).to eq(&quot;/pageants/#{@pageant2.id}/contest_order&quot;)</code>
+            <code class="ruby">    expect(current_path).to eq(&quot;/pageants/#{@pageant2.id}/contest&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="55">
+          <li class="covered" data-hits="1" data-linenumber="49">
             <span class="hits">1</span>
             
 
@@ -7651,7 +7640,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="56">
+          <li class="never" data-hits="" data-linenumber="50">
             
             
 
@@ -7662,7 +7651,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="57">
+          <li class="never" data-hits="" data-linenumber="51">
             
             
 
@@ -7673,7 +7662,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="58">
+          <li class="never" data-hits="" data-linenumber="52">
             
             
 
@@ -7684,7 +7673,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="59">
+          <li class="covered" data-hits="1" data-linenumber="53">
             <span class="hits">1</span>
             
 
@@ -7695,7 +7684,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="60">
+          <li class="covered" data-hits="1" data-linenumber="54">
             <span class="hits">1</span>
             
 
@@ -7706,7 +7695,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="61">
+          <li class="never" data-hits="" data-linenumber="55">
             
             
 
@@ -7717,7 +7706,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="62">
+          <li class="covered" data-hits="1" data-linenumber="56">
             <span class="hits">1</span>
             
 
@@ -7728,7 +7717,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="63">
+          <li class="covered" data-hits="1" data-linenumber="57">
             <span class="hits">1</span>
             
 
@@ -7739,13 +7728,79 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="64">
+          <li class="never" data-hits="" data-linenumber="58">
             
             
 
             
 
             <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="59">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="60">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &quot;brings me back to the current index page with only the records that meet that threshold shown.&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="61">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit &quot;/pageants/#{@pageant3.id}/contest&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="62">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="63">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in(&quot;Show contestants with more than&quot;, with: &quot;10&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="64">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_button(&quot;Years of Experience&quot;)</code>
           </li>
         </div>
       
@@ -7756,7 +7811,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  </code>
           </li>
         </div>
       
@@ -7767,89 +7822,12 @@
 
             
 
-            <code class="ruby">  xit &quot;brings me back to the current index page with only the records that meet that threshold shown.&quot; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="67">
-            
-            
-
-            
-
-            <code class="ruby">    visit &quot;/pageants/#{@pageant3.id}/contest&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="68">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="69">
-            
-            
-
-            
-
-            <code class="ruby">    fill_in(&quot;Show contestants with more than&quot;, with: &quot;10&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="70">
-            
-            
-
-            
-
-            <code class="ruby">    click_button(&quot;Years of Experience&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="71">
-            
-            
-
-            
-
-            <code class="ruby">    save_and_open_page</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="72">
-            
-            
-
-            
-
-            <code class="ruby">  </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="73">
-            
-            
-
-            
-
             <code class="ruby">    expect(current_path).to eq(&quot;/pageants/#{@pageant3.id}/contest&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="74">
+          <li class="never" data-hits="" data-linenumber="67">
             
             
 
@@ -7860,8 +7838,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="75">
-            
+          <li class="covered" data-hits="1" data-linenumber="68">
+            <span class="hits">1</span>
             
 
             
@@ -7871,8 +7849,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="76">
-            
+          <li class="covered" data-hits="1" data-linenumber="69">
+            <span class="hits">1</span>
             
 
             
@@ -7882,7 +7860,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="77">
+          <li class="never" data-hits="" data-linenumber="70">
             
             
 
@@ -7893,7 +7871,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="78">
+          <li class="never" data-hits="" data-linenumber="71">
             
             
 
@@ -7904,7 +7882,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="79">
+          <li class="never" data-hits="" data-linenumber="72">
             
             
 

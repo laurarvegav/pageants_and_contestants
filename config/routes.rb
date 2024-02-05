@@ -22,10 +22,9 @@ Rails.application.routes.draw do
   post "/pageants/:id/contest", to: "pageants#contest_create"
   get "/contestants/:ID/edit", to: "contestants#edit"
   patch "/contestants/:ID", to: "contestants#update"
-  get "/pageants/:id/contest_order", to: "pageants#contest_order"
   delete "/pageants/:id", to: "pageants#destroy"
   delete "/contestants/:id", to: "contestants#destroy"
-  get "/pageants/:id/contest", to: "pageants#process_contest_input"
-  delete "/pageants", to: "pageants#destroy"
-  delete "/contestants", to: "contestants#destroy"
+  # get "/pageants/:id/contest", to: "pageants#process_contest_input"
+  # delete "/pageants", to: "pageants#destroy"
+  # delete "/contestants", to: "contestants#destroy"
 end

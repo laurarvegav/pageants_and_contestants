@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Pageants Contest', type: :feature do
  describe 'As a visitor' do
-  before(:each) do
+  before do
     @pageant1 = Pageant.create!(name: "Miss Colombia", scheduled: true, version_number: 10)
     @pageant2 = Pageant.create!(name: "Miss Universe", scheduled: true, version_number: 25)
     @pageant3 = Pageant.create!(name: "Miss NRS", scheduled: true, version_number: 9)
@@ -41,17 +41,11 @@ RSpec.describe 'Pageants Contest', type: :feature do
 
 
   # User Story 16, Sort Parent's Children in Alphabetical Order by name 
-  it "shows a link to sort children in alphabetical order" do
-    visit "/pageants/#{@pageant2.id}/contest"
-
-    expect(page).to have_link(href: "/pageants/#{@pageant2.id}/contest_order")
-  end
-
   it "takes me back to the Contest Page where I see all of the Pageant's Contestants in alphabetical order" do
     visit "/pageants/#{@pageant2.id}/contest"
     click_link("Sort in Alphabetical Order")
 
-    expect(current_path).to eq("/pageants/#{@pageant2.id}/contest_order")
+    expect(current_path).to eq("/pageants/#{@pageant2.id}/contest")
     expect(@contestant1.name).to appear_before(@contestant2.name)
   end
 
@@ -63,12 +57,11 @@ RSpec.describe 'Pageants Contest', type: :feature do
     expect(page).to have_button("Years of Experience")
   end
 
-  xit "brings me back to the current index page with only the records that meet that threshold shown." do
+  it "brings me back to the current index page with only the records that meet that threshold shown." do
     visit "/pageants/#{@pageant3.id}/contest"
 
     fill_in("Show contestants with more than", with: "10")
     click_button("Years of Experience")
-    save_and_open_page
   
     expect(current_path).to eq("/pageants/#{@pageant3.id}/contest")
 
