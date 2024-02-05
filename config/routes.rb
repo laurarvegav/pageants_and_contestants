@@ -25,4 +25,5 @@ Rails.application.routes.draw do
   get "/pageants/:id/contest_order", to: "pageants#contest_order"
   delete "/pageants/:id", to: "pageants#destroy"
   delete "/contestants/:id", to: "contestants#destroy"
+  get "/pageants/:id/contest", to: "pageants#process_contest_input"
 end

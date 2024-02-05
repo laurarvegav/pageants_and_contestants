@@ -5,8 +5,11 @@ RSpec.describe 'Pageants Contest', type: :feature do
   before(:each) do
     @pageant1 = Pageant.create!(name: "Miss Colombia", scheduled: true, version_number: 10)
     @pageant2 = Pageant.create!(name: "Miss Universe", scheduled: true, version_number: 25)
+    @pageant3 = Pageant.create!(name: "Miss NRS", scheduled: true, version_number: 9)
     @contestant1 = @pageant2.contestants.create!(name: "Colombia", years_of_experience: 57, has_representative: true)
     @contestant2 = @pageant2.contestants.create!(name: "Peru", years_of_experience: 75, has_representative: true)
+    @contestant3 = @pageant3.contestants.create!(name: "Bogota", years_of_experience: 11, has_representative: true)
+    @contestant4 = @pageant3.contestants.create!(name: "Bolivar", years_of_experience: 7, has_representative: true)
   end
 
   #User Story 5, Parent Children Index
@@ -50,6 +53,27 @@ RSpec.describe 'Pageants Contest', type: :feature do
 
     expect(current_path).to eq("/pageants/#{@pageant2.id}/contest_order")
     expect(@contestant1.name).to appear_before(@contestant2.name)
+  end
+
+  # User Story 21, Display Records Over a Given Threshold 
+  it "shows a form that allows me to input a number value and a submit button" do
+    visit "/pageants/#{@pageant3.id}/contest"
+
+    expect(page).to have_field("Show contestants with more than", type: "number")
+    expect(page).to have_button("Years of Experience")
+  end
+
+  xit "brings me back to the current index page with only the records that meet that threshold shown." do
+    visit "/pageants/#{@pageant3.id}/contest"
+
+    fill_in("Show contestants with more than", with: "10")
+    click_button("Years of Experience")
+    save_and_open_page
+  
+    expect(current_path).to eq("/pageants/#{@pageant3.id}/contest")
+
+    expect(page).to have_content("Bogota")
+    expect(page).to have_no_content("Bolivar")
   end
  end
 end

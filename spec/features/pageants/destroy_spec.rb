@@ -11,7 +11,6 @@ RSpec.describe "destroying a Pageant" do
   it "can delete the pageant from the show page" do
     visit "/pageants/#{@pageant1.id}"
     click_button "Delete"
-    save_and_open_page
 
     expect(current_path).to eq("/pageants")
     expect(page).to_not have_content("Miss Colombia")

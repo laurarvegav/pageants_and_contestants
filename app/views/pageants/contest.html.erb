@@ -4,6 +4,12 @@
     <h2><%= contestant.name %></h2>
     <li>Has: <%= contestant.years_of_experience %> years of experience</li>
     <li>A Representative? <%= contestant.has_representative %></li>
+
 <% end %>
+  <p><%= form_with url: "/pageants/#{@pageant.id}/contest", method: :get, local: true do |form| %>
+    <%= form.label :show_contestants_with_more_than, "Show contestants with more than" %>
+    <%= form.number_field :show_contestants_with_more_than %>
+    <%= form.submit "Years of Experience" %>
+    <% end %></p>
 
 <p><a href="/pageants/<%= @contest.first.pageant_id %>/contest_order">Sort in Alphabetical Order</a></p>
