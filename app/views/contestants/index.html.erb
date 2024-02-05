@@ -3,5 +3,6 @@
     <h3><%= contestant.name %></h3>
     <li>Years of Experience: <%= contestant.years_of_experience %></li>
     <li> Has Representative? <%= contestant.has_representative %></li>
+    <p><%= button_to "Delete #{contestant.name}", "/contestants/#{contestant.id}", method: :delete %></p>
     <p><a href="/contestants/<%= contestant.id %>/edit"> Edit Contestant <%= contestant.name %></a></p>
 <% end %>

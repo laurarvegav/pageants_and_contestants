@@ -25,4 +25,13 @@ RSpec.describe "destroying a Pageant" do
     expect(page).to_not have_content("Huila")
     expect(page).to_not have_content("Arauca")
   end
+
+  #User Story 22, Parent Delete
+  it "can delete the pageant from the index page" do
+    visit "/pageants"
+    click_button "Delete Miss Colombia"
+
+    expect(current_path).to eq("/pageants")
+    expect(page).to_not have_content("Miss Colombia")
+  end
 end

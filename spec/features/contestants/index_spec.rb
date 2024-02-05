@@ -50,5 +50,12 @@ RSpec.describe 'Contestant Show', type: :feature do
     
     expect(current_path).to eq("/contestants/#{@contestant1.id}/edit")
   end
+
+  #User Story 23, Child Delete
+  it "shows a link to delete the child" do
+    visit "/contestants"
+
+    expect(page).to have_button("Delete")
+  end
  end
 end

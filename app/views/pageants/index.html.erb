@@ -4,6 +4,7 @@
     <h3><%= pageant.name %></h3> 
     <p><a href="/pageants/<%= pageant.id %>"> Pageant Details</a></p>
     <p><a href="/pageants/<%= pageant.id %>/edit"> Edit Pageant <%= pageant.name %></a></p>
+    <p><%= button_to "Delete #{pageant.name}", "/pageants/#{pageant.id}", method: :delete %></p>
     <small>Last updated: <%= pageant.created_at %></small>
 <% end %>
 

@@ -26,4 +26,6 @@ Rails.application.routes.draw do
   delete "/pageants/:id", to: "pageants#destroy"
   delete "/contestants/:id", to: "contestants#destroy"
   get "/pageants/:id/contest", to: "pageants#process_contest_input"
+  delete "/pageants", to: "pageants#destroy"
+  delete "/contestants", to: "contestants#destroy"
 end

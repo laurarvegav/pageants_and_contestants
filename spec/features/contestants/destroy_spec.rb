@@ -10,8 +10,16 @@ RSpec.describe "destroying a Contestamt" do
   #User Story 19, Child Delete
   it "can delete the contestant from the show page" do
     visit "/contestants/#{@contestant3.id}"
-
     click_button "Delete"
+
+    expect(current_path).to eq("/contestants")
+    expect(page).to_not have_content("Huila")
+  end
+
+  #User Story 23, Child Delete
+  it "can delete the contestant from the index page" do
+    visit "/contestants"
+    click_button "Delete Huila"
 
     expect(current_path).to eq("/contestants")
     expect(page).to_not have_content("Huila")

@@ -67,5 +67,12 @@ RSpec.describe 'Pageants Index', type: :feature do
       
       expect(current_path).to eq("/pageants/#{@pageant1.id}/edit")
     end
+
+    #User Story 22, Parent Delete
+    it "shows a link to delete the parent" do
+      visit "/pageants"
+
+      expect(page).to have_button("Delete")
+    end
   end
 end
