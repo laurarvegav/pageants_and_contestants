@@ -37,7 +37,7 @@ RSpec.describe 'Pageant Show', type: :feature do
     it "shows a link to take me to that pageant's contest page" do
       visit "/pageants/#{@pageant2.id}"
 
-      expect(page).to have_link(href: "/pageants/#{@pageant2.id}/contest")
+      expect(page).to have_link(href: "/pageants/#{@pageant2.id}/contestants")
     end
 
     # User story 12, Parent Update
@@ -51,7 +51,7 @@ RSpec.describe 'Pageant Show', type: :feature do
     it "shows a link to add a new adoptable contestant for that pageant 'Create Contestant'" do
       visit "/pageants/#{@pageant1.id}"
 
-      expect(page).to have_link(href: "/pageants/#{@pageant1.id}/contest_new")
+      expect(page).to have_link(href: "/pageants/#{@pageant1.id}/contestants/new")
     end
 
     #User Story 19, Parent Delete

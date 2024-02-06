@@ -21,7 +21,7 @@ RSpec.describe 'Pageants Index', type: :feature do
     it 'has a link to a list of children associated with it' do
       visit "/pageants/#{@pageant2.id}"
 
-      expect(page).to have_link(href: "/pageants/#{@pageant2.id}/contest")
+      expect(page).to have_link(href: "/pageants/#{@pageant2.id}/contestants")
     end
 
     #User Story 6, Parent Index sorted by Most Recently Created 

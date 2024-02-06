@@ -1,15 +1,15 @@
 <h1>Pageant Contestants:</h1>
 
-<% @contest.each do |contestant| %>
+<% @contestants.each do |contestant| %>
   <h2><%= contestant.name %></h2>
   <li>Has: <%= contestant.years_of_experience %> years of experience</li>
   <li>A Representative? <%= contestant.has_representative %></li>
 <% end %>
 <br>
-<%= form_with url: "/pageants/#{@pageant.id}/contest", method: :get, local: true do |form| %>
+<%= form_with url: "/pageants/#{@pageant.id}/contestants", method: :get, local: true do |form| %>
   <%= form.label :show_contestants_with_more_than, "Show contestants with more than" %>
   <%= form.number_field :show_contestants_with_more_than %>
   <%= form.submit "Years of Experience" %>
 <% end %>
 
-<%= link_to "Sort in Alphabetical Order", "/pageants/#{@pageant.id}/contest?sort=true" %>
+<%= link_to "Sort in Alphabetical Order", "/pageants/#{@pageant.id}/contestants?sort=true" %>

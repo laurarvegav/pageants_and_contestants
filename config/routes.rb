@@ -9,22 +9,23 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   get "/", to: "welcome#index"
+
   get "/pageants", to: "pageants#index"
   get "/pageants/:id", to: "pageants#show"  
-  get "/contestants", to: "contestants#index"
-  get "/contestants/:ID", to: "contestants#show"
-  get "/pageants/:id/contest", to: "pageants#contest"
   get "/pageants/new", to: "pageants#new"
   post "/pageants",to: "pageants#create"
   get "/pageants/:id/edit", to: "pageants#edit"
   patch "/pageants/:id", to: "pageants#update"
-  get "/pageants/:id/contest_new", to: "pageants#contest_new"
-  post "/pageants/:id/contest", to: "pageants#contest_create"
+  delete "/pageants/:id", to: "pageants#destroy"
+
+  get "/contestants", to: "contestants#index"
+  get "/contestants/:ID", to: "contestants#show"
   get "/contestants/:ID/edit", to: "contestants#edit"
   patch "/contestants/:ID", to: "contestants#update"
-  delete "/pageants/:id", to: "pageants#destroy"
   delete "/contestants/:id", to: "contestants#destroy"
-  # get "/pageants/:id/contest", to: "pageants#process_contest_input"
-  # delete "/pageants", to: "pageants#destroy"
-  # delete "/contestants", to: "contestants#destroy"
+
+  get "/pageants/:id/contestants", to: "pageant/contestants#index"
+  get "/pageants/:id/contestants/new", to: "pageant/contestants#new"
+  post "/pageants/:id/contestants", to: "pageant/contestants#create"
+
 end

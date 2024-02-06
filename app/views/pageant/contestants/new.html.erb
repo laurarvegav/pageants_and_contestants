@@ -1,5 +1,5 @@
 <h1>Register a Contestant</h1>
-<%= form_with url: "/pageants/#{@pageant.id}/contest", method: :post, local: true do |form| %>
+<%= form_with url: "/pageants/#{@pageant.id}/contestants", method: :post, local: true do |form| %>
   <%= form.label :name %>
   <%= form.text_field :name %><br>
   

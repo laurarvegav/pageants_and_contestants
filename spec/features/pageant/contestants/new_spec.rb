@@ -11,7 +11,7 @@ RSpec.describe 'Pageant Show', type: :feature do
 
     # User Story 13, Parent Child Creation 
     it "shows a form to add a new adoptable contestant for that pageant 'Create Contestant'" do
-      visit "/pageants/#{@pageant1.id}/contest_new"
+      visit "/pageants/#{@pageant1.id}/contestants/new"
 
       expect(page).to have_content("Register a Contestant")
       expect(page).to have_field("Name")
@@ -21,15 +21,15 @@ RSpec.describe 'Pageant Show', type: :feature do
     end
     
     it "can register a contestant in a pageant" do
-      visit "/pageants/#{@pageant1.id}/contest_new"
-      
+      visit "/pageants/#{@pageant1.id}/contestants/new"
+     
       fill_in("Name", with: "Bolivia")
       select('True', from: "Has representative")
       fill_in("Years of experience", with: "6")
       
       click_button("Register Contestant")
       
-      expect(current_path).to eq("/pageants/#{@pageant1.id}/contest")
+      expect(current_path).to eq("/pageants/#{@pageant1.id}/contestants")
       expect(page).to have_content("Bolivia")
       expect(page).to have_content("6")
     end

@@ -1,8 +1,8 @@
 <h1>Pageant's Name:<%= @pageant.name %></h1>
-<p>Scheduled? <%= @pageant.scheduled %></p>
-<p>Version Number <%= @pageant.version_number %></p>
-<p><%= @pageant.name %> has <%= @pageant.contestants.count %> contestants.
-<p><a href="/pageants/<%= @pageant.id %>/contest"> Pageant Contestants</a></p>
-<p><a href="/pageants/<%= @pageant.id %>/edit"> Update Pageant</a></p>
-<p><a href="/pageants/<%= @pageant.id %>/contest_new"> Create Contestant</a></p>
-<p><%= button_to "Delete", "/pageants/#{@pageant.id}", method: :delete %></p>
+<li>Scheduled? <%= @pageant.scheduled %><li>
+<li>Version Number <%= @pageant.version_number %></li>
+<li><%= @pageant.name %> has <%= @pageant.contestants.count %> contestants.</li>
+<br><a href="/pageants/<%= @pageant.id %>/contestants"> Pageant Contestants</a>
+<br><a href="/pageants/<%= @pageant.id %>/edit"> Update Pageant</a>
+<br><a href="/pageants/<%= @pageant.id %>/contestants/new"> Create Contestant</a>
+<br><%= button_to "Delete", "/pageants/#{@pageant.id}", method: :delete %> 
