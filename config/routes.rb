@@ -19,9 +19,9 @@ Rails.application.routes.draw do
   delete "/pageants/:id", to: "pageants#destroy"
 
   get "/contestants", to: "contestants#index"
-  get "/contestants/:ID", to: "contestants#show"
-  get "/contestants/:ID/edit", to: "contestants#edit"
-  patch "/contestants/:ID", to: "contestants#update"
+  get "/contestants/:id", to: "contestants#show"
+  get "/contestants/:id/edit", to: "contestants#edit"
+  patch "/contestants/:id", to: "contestants#update"
   delete "/contestants/:id", to: "contestants#destroy"
 
   get "/pageants/:id/contestants", to: "pageant/contestants#index"

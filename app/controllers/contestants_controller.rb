@@ -4,15 +4,15 @@ class ContestantsController < ApplicationController
   end
 
   def show
-    @contestant = Contestant.find(params[:ID])
+    @contestant = Contestant.find(params[:id])
   end
 
   def edit
-    @contestant = Contestant.find(params[:ID])
+    @contestant = Contestant.find(params[:id])
   end
 
   def update
-    @contestant = Contestant.find(params[:ID])
+    @contestant = Contestant.find(params[:id])
   
     if @contestant.update(contestant_params)
       redirect_to "/contestants/#{@contestant.id}"

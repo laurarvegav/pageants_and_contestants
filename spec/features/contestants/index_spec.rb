@@ -46,7 +46,6 @@ RSpec.describe 'Contestant Show', type: :feature do
 
   it "takes me to that contestant edit page where I can update its information just like in User Story 12" do
     visit "/contestants"
-    save_and_open_page
     click_link("Edit Contestant #{@contestant1.name}")
     
     expect(current_path).to eq("/contestants/#{@contestant1.id}/edit")
