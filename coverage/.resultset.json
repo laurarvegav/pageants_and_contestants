@@ -810,12 +810,21 @@
           null
         ]
       },
-      "/Users/lauravegavargas/turing_work/2mod/projects/first_indiv/spec/models/contestant_spec.rb": {
+      "/Users/lauravegavargas/turing_work/2mod/projects/first_indiv/app/models/pageant.rb": {
         "lines": [
+          1,
+          1,
+          1,
           1,
           null,
           1,
-          2,
+          null
+        ]
+      },
+      "/Users/lauravegavargas/turing_work/2mod/projects/first_indiv/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
           null
         ]
       },
@@ -830,33 +839,10 @@
           1,
           1,
           null,
-          null
-        ]
-      },
-      "/Users/lauravegavargas/turing_work/2mod/projects/first_indiv/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/lauravegavargas/turing_work/2mod/projects/first_indiv/spec/models/pageant_spec.rb": {
-        "lines": [
-          1,
           null,
-          1,
-          2,
-          null
-        ]
-      },
-      "/Users/lauravegavargas/turing_work/2mod/projects/first_indiv/app/models/pageant.rb": {
-        "lines": [
-          1,
-          1,
           1,
           1,
           null,
-          1,
           null
         ]
       },
@@ -1002,6 +988,6 @@
         ]
       }
     },
-    "timestamp": 1707258820
+    "timestamp": 1707265580
   }
 }

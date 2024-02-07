@@ -7,8 +7,8 @@ class Pageant::ContestantsController < ApplicationController
     @contestants = @contestants.order_alpha if params[:sort]
 
     if params[:show_contestants_with_more_than]
-      years_of_experience_threshold = params[:show_contestants_with_more_than].to_i
-      @contestants = @contestants.where("years_of_experience > ?", years_of_experience_threshold)
+      given_years = params[:show_contestants_with_more_than].to_i
+      @contestants = @contestants.sample_experience(given_years)
     end
   end 
 

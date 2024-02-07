@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2024-02-06T15:33:40-07:00">2024-02-06T15:33:40-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2024-02-06T17:26:20-07:00">2024-02-06T17:26:20-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,7 +23,7 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  99.07%
+  99.06%
 </span>
 
      </span>
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>30</b> files in total.
+    <b>28</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>431</b> relevant lines,
-    <span class="green"><b>427</b> lines covered</span> and
+    <b>427</b> relevant lines,
+    <span class="green"><b>423</b> lines covered</span> and
     <span class="red"><b>4</b> lines missed. </span>
     (<span class="green">
-  99.07%
+  99.06%
 </span>
 )
   </div>
@@ -139,9 +139,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#88f43ed83985edaaf349e975d281f207608e591e" class="src_link" title="app/models/contestant.rb">app/models/contestant.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">6</td>
-            <td class="cell--number">6</td>
+            <td class="cell--number">14</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">8</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -375,28 +375,6 @@
             <td class="cell--number">32</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.75</td>
-            
-          </tr>
-        
-          <tr class="t-file">
-            <td class="strong t-file__name"><a href="#ed814f28a6100a58ef3c4a97a824ed5bd33e4134" class="src_link" title="spec/models/contestant_spec.rb">spec/models/contestant_spec.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">5</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.33</td>
-            
-          </tr>
-        
-          <tr class="t-file">
-            <td class="strong t-file__name"><a href="#f6e4ad8fde0d948841ee7c4e102c3660b7b1f462" class="src_link" title="spec/models/pageant_spec.rb">spec/models/pageant_spec.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">5</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.33</td>
             
           </tr>
         
@@ -1018,7 +996,7 @@
 
             
 
-            <code class="ruby">      years_of_experience_threshold = params[:show_contestants_with_more_than].to_i</code>
+            <code class="ruby">      given_years = params[:show_contestants_with_more_than].to_i</code>
           </li>
         </div>
       
@@ -1029,7 +1007,7 @@
 
             
 
-            <code class="ruby">      @contestants = @contestants.where(&quot;years_of_experience &gt; ?&quot;, years_of_experience_threshold)</code>
+            <code class="ruby">      @contestants = @contestants.sample_experience(given_years)</code>
           </li>
         </div>
       
@@ -2047,8 +2025,8 @@
     
 
     <div class="t-line-summary">
-      <b>6</b> relevant lines.
-      <span class="green"><b>6</b> lines covered</span> and
+      <b>8</b> relevant lines.
+      <span class="green"><b>8</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -2160,6 +2138,50 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def self.sample_experience(given_years)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    self.where(&quot;years_of_experience &gt; ?&quot;, given_years)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
             
             
 
@@ -10841,178 +10863,6 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="64">
-            
-            
-
-            
-
-            <code class="ruby">end</code>
-          </li>
-        </div>
-      
-    </ol>
-  </pre>
-</div>
-
-      
-        <div class="source_table" id="ed814f28a6100a58ef3c4a97a824ed5bd33e4134">
-  <div class="header">
-    <h3>spec/models/contestant_spec.rb</h3>
-    <h4>
-      <span class="green">
-  100.0%
-</span>
-
-      lines covered
-    </h4>
-
-    
-
-    <div class="t-line-summary">
-      <b>3</b> relevant lines.
-      <span class="green"><b>3</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-
-    
-
-  </div>
-
-  <pre>
-    <ol>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="1">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">require &quot;rails_helper&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="2">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="3">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">RSpec.describe Contestant, type: :model do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="4">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">    it { should belong_to :pageant }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="5">
-            
-            
-
-            
-
-            <code class="ruby">end</code>
-          </li>
-        </div>
-      
-    </ol>
-  </pre>
-</div>
-
-      
-        <div class="source_table" id="f6e4ad8fde0d948841ee7c4e102c3660b7b1f462">
-  <div class="header">
-    <h3>spec/models/pageant_spec.rb</h3>
-    <h4>
-      <span class="green">
-  100.0%
-</span>
-
-      lines covered
-    </h4>
-
-    
-
-    <div class="t-line-summary">
-      <b>3</b> relevant lines.
-      <span class="green"><b>3</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-
-    
-
-  </div>
-
-  <pre>
-    <ol>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="1">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">require &quot;rails_helper&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="2">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="3">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">RSpec.describe Pageant, type: :model do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="4">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">    it { should have_many :contestants }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="5">
             
             
 
